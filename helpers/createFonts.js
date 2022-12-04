@@ -1,7 +1,7 @@
-const fontsFolder = './src/fonts';
+const fontsFolder = '../src/fonts';
 const fs = require('fs')
 const path = require('path')
-const filename = './src/fonts.scss'
+const filename = '../src/fonts.scss'
 
 fs.writeFileSync(filename, '');
 fs.readdirSync(fontsFolder).forEach(file => {
