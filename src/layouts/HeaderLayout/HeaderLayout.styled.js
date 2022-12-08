@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flex, flexHLeft, flexHRight } from '../../libs/styledComponentLibs'
+import { flexHLeft, flexHRight } from '../../libs/styledComponentLibs'
 
 
 export const LeftSection = styled.section `

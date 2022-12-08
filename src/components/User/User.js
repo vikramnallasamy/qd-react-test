@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTheme } from 'styled-components';
-import NotificationBell from '../../icons/Notification Bell.svg';
 import { renderIcon } from '../SideBar/SideBar';
 import { UserCont, NotificationIcon, UserImageCont, UserName, UserRole } from './User.styled'
 

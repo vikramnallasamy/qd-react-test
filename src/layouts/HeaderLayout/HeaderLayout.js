@@ -1,5 +1,5 @@
 import React from 'react'
-import { LeftSection, RightSection, HeaderContainer } from './HeaderLayout.styled'
+import { LeftSection, RightSection } from './HeaderLayout.styled'
 import Dazzie from '../../components/Dazzie/Dazzie'
 import User from '../../components/User/User'
 

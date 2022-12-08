@@ -14,18 +14,18 @@ import user from '../icons/user.svg';
 export default function IconsPalette() {
 return (
 	<div>
-		<img title='Coupon Discount' src={CouponDiscount} />
-		<img title='customer' src={customer} />
-		<img title='filter' src={filter} />
-		<img title='Notification Bell' src={NotificationBell} />
-		<img title='orders' src={orders} />
-		<img title='Package' src={Package} />
-		<img title='pen' src={pen} />
-		<img title='plus' src={plus} />
-		<img title='SEARCH' src={SEARCH} />
-		<img title='seettings' src={seettings} />
-		<img title='threedots' src={threedots} />
-		<img title='user' src={user} />
+		<img alt='Coupon' title='Coupon Discount' src={CouponDiscount} />
+		<img alt='customer' title='customer' src={customer} />
+		<img alt='filter' title='filter' src={filter} />
+		<img alt='Notification' title='Notification Bell' src={NotificationBell} />
+		<img alt='orders' title='orders' src={orders} />
+		<img alt='Package' title='Package' src={Package} />
+		<img alt='pen' title='pen' src={pen} />
+		<img alt='plus' title='plus' src={plus} />
+		<img alt='SEARCH' title='SEARCH' src={SEARCH} />
+		<img alt='seettings' title='seettings' src={seettings} />
+		<img alt='threedots' title='threedots' src={threedots} />
+		<img alt='user' title='user' src={user} />
 		
 	</div>)
 }
