@@ -1,6 +1,8 @@
 @import "fonts";
+@import './libs/scss/mixins.scss';
 
 .App {
+  @include flexCenter();
   text-align: center;
   font-family: "Mulish-SemiBoldItalic";
 }
