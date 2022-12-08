@@ -5,7 +5,7 @@ import { Icon, SideBarWrapper } from './SideBar.styled'
 export const renderIcon = (icon) => {
     if(icon.isSvg)
         return parseHtml(icon.src)
-    return <img src={icon.src} />
+    return <img alt={icon.name} src={icon.src} />
 }
 
 export default function SideBar(props) {
