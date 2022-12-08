@@ -1,8 +1,9 @@
 
 import React from 'react'
+import { ContentContainer } from './ContentLayout.styled'
 
 export default function ContentLayout() {
   return (
-    <div>ContentLayout</div>
+    <ContentContainer>ContentLayout</ContentContainer>
   )
 }
