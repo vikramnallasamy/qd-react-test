@@ -21,6 +21,8 @@ export const SideBarSection = styled.section.attrs({ className: 'SideBarSection'
   `
 export const ContentSection = styled.section.attrs({ className: 'ContentSection'}) `
   grid-area: content;
+  overflow-y: auto;
+  background-color: ${({ theme }) => theme.color.lightgrey || 'lightgrey'};
   /* ${styledLib.flex('right')} */
   /* @include flexCenter(); */
   `

@@ -1,9 +1,11 @@
 
 import React from 'react'
-import { ContentContainer } from './ContentLayout.styled'
+import { Outlet } from 'react-router-dom'
 
 export default function ContentLayout() {
   return (
-    <ContentContainer>ContentLayout</ContentContainer>
+    <>
+      <Outlet/>
+    </>
   )
 }
