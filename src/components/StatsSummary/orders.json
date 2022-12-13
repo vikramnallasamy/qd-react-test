@@ -1,0 +1,16 @@
+[{
+    "id": 1,
+    "item": "Sashimi",
+    "quantity": 30,
+    "revenue": 293.01,
+    "netprofit": 710.64,
+    "currency": "$"
+},
+{
+    "id": 12,
+    "item": "Unagi - Grilled Eel",
+    "quantity": 300,
+    "revenue": 2930.01,
+    "netprofit": 71090.64,
+    "currency": "$"
+}]

@@ -1,0 +1,26 @@
+{
+    "food": [{
+        "name": "Sashini",
+        "price":"$22"
+    },
+    {
+        "name": "Unagi grilled Eel",
+        "price":"$22"
+    },
+    {
+        "name": "Soba BuckWheat Noodles",
+        "price":"$22"
+    }],
+    "drinks": [{
+        "name": "Amazake",
+        "price":"$23"
+    }],
+    "snack": [{
+        "name": "Amazake",
+        "price":"$23"
+    }],
+    "packages": [{
+        "name": "Amazake",
+        "price":"$23"
+    }]
+}

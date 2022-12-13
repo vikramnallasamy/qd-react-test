@@ -24,7 +24,7 @@ export function flexVcenter() {
 export function flexHCenter() {
     return css `
         display: flex;
-        align-items: center;
+        justify-content: center;
     `
 }
 export function flexHLeft() {

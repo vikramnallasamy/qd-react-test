@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { flex, flexCol } from '../../libs/styledComponentLibs'
 
 export const SideBarWrapper = styled.div `
-    --icon-padding: 1rem;
+    --icon-padding: 2rem;
     padding-top: var(--icon-padding);
     margin-top: var(--icon-margin);
     ${flexCol('center')}

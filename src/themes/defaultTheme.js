@@ -11,8 +11,24 @@ export const theme = {
         dazzieName: "Mulish-ExtraBold",
         userName: "Mulish-Bold",
         userRole: "Mulish-ExtraLight",
+        productListHeading: "Mulish-ExtraBold",
+        productListCategoryMenu: "Mulish-ExtraBold",
+        MulishBold: "Mulish-Bold",
+        MulishExtraBold: "Mulish-ExtraBold",
+        MulishExtraLight: "Mulish-ExtraLight",
+        MulishRegular: "Mulish-Regular",
     },
     image: {
+        products: {
+            searchIcon: {
+                name: 'seachicon',
+                src: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 14H14.71L14.43 13.73C15.63 12.33 16.25 10.42 15.91 8.39002C15.44 5.61002 13.12 3.39002 10.32 3.05002C6.09002 2.53002 2.53002 6.09002 3.05002 10.32C3.39002 13.12 5.61002 15.44 8.39002 15.91C10.42 16.25 12.33 15.63 13.73 14.43L14 14.71V15.5L18.25 19.75C18.66 20.16 19.33 20.16 19.74 19.75C20.15 19.34 20.15 18.67 19.74 18.26L15.5 14ZM9.50002 14C7.01002 14 5.00002 11.99 5.00002 9.50002C5.00002 7.01002 7.01002 5.00002 9.50002 5.00002C11.99 5.00002 14 7.01002 14 9.50002C14 11.99 11.99 14 9.50002 14Z" fill="#9A9AB0"/>
+                </svg>
+                `,
+                isSvg: true 
+            } 
+        },
         header: {
             notificationBell: {
                 name: 'notificationbell',
@@ -35,10 +51,11 @@ export const theme = {
                 Sorry, your browser does not support inline SVG.
                 </svg>
                 `,
-                isSvg: true
+                isSvg: true,
+                index: true
             },
             {
-                name: 'orders',
+                name: 'statssummary',
                 src: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 19V6H16V19H15V3H9V19H8V12H2V19H1V21H23V19H22ZM4 19V14H6V19H4ZM11 19V5H13V19H11ZM18 19V8H20V19H18Z" fill="#9A9AB0"/>
                 </svg>
@@ -74,7 +91,7 @@ export const theme = {
                 isSvg: true
             },
             {
-                name: 'user',
+                name: 'profile',
                 src: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM19.3995 17.1246C20.4086 15.6703 21 13.9042 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.9042 3.59138 15.6703 4.6005 17.1246C5.72595 15.6381 8.3706 15 12 15C15.6294 15 18.274 15.6381 19.3995 17.1246ZM17.9647 18.7398C17.672 17.6874 15.5694 17 12 17C8.43062 17 6.328 17.6874 6.03532 18.7398C7.6233 20.1462 9.71194 21 12 21C14.2881 21 16.3767 20.1462 17.9647 18.7398ZM12 15C9.76086 15 8 13.4274 8 10C8 7.75576 9.5791 6 12 6C14.4142 6 16 7.92158 16 10.2C16 13.4796 14.2181 15 12 15ZM10 10C10 12.2693 10.8182 13 12 13C13.1777 13 14 12.2984 14 10.2C14 8.95042 13.2157 8 12 8C10.7337 8 10 8.81582 10 10Z" fill="#9A9AB0"/>
                 </svg>
@@ -82,9 +99,5 @@ export const theme = {
                 isSvg: true
             },
         ],
-        dazzie:'',
-        user: '',
-        products: '',
-        editProduct:''
     }
 }
