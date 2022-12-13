@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { flex, flexHCenter } from '../../libs/styledComponentLibs'
+import { theme } from '../../themes/defaultTheme'
 
 export const ProductsCont = styled.div `
     --pcont-border-radius: 8px;
@@ -85,6 +86,7 @@ export const ProductName = styled.div `
     height: 40px;
     display: flex;
     align-items: end;
+    font-family: ${theme.font.MulishBold};
 `
 export const ProductListItems = styled.div `
     display: grid;

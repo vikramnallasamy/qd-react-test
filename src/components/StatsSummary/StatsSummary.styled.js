@@ -41,12 +41,11 @@ export const LatestOrderCont = styled.div `
         grid-template-columns: 1fr;
         word-break: break-word;
     }
-    @media only screen and (max-width: 700px) {
-        font-size: 0.65rem;
-    }
+    
 `
 
 export const LatestOrderSection = styled.div `
+    border-radius: var(--border-radius-common);
     table {
         width: 100%;
         text-align: left;
@@ -79,6 +78,7 @@ export const ItemsSoldImg = styled.div `
     border-radius: 6px;
 `
 export const ItemsSoldWrap = styled.div `
+    border-top: 1px solid ${theme.color.lightgrey};
     overflow-y: auto;
     height: 50vh;
     scrollbar-width: none;
@@ -90,7 +90,7 @@ export const ItemsSoldWrap = styled.div `
     position: relative;
     --scrollbar-display: none;
     &:hover {
-        --scrollbar-display: block;
+        /* --scrollbar-display: block; */
     }
     &::before, span {
         content: '';
@@ -110,6 +110,7 @@ export const ItemsSoldWrap = styled.div `
     }
 `
 export const ItemsSoldSection = styled.div `
+    border-radius: var(--border-radius-common);
     table {
         overflow-y: auto;
         width: 100%;
@@ -135,4 +136,20 @@ export const ItemsSoldSection = styled.div `
             }
         }
     }
+`
+export const StatsRateIcon = styled.div `
+    --scale-icon: 0.5;
+    svg {
+        fill: none;
+        transform: scale(var(--scale-icon));
+        ${({ rate }) => {
+            return rate > 0 ? `stroke: ${theme.color.rateIndicatorUp}; transform: scale(var(--scale-icon)) rotateX(180deg);` : `stroke: ${theme.color.rateIndicatorDown};`
+        }}
+        stroke-width: 3px;
+    }
+`
+export const RateText = styled.div `
+    ${({ rate }) => {
+        return rate > 0 ? `color: ${theme.color.rateIndicatorUp};` : `color: ${theme.color.rateIndicatorDown};`
+    }}
 `

@@ -23,8 +23,11 @@ export const Icon = styled(NavLink) `
     ${flex('center')}
     width: 50%;
     aspect-ratio: 1/1;
-    svg > * {
-        fill: ${({ theme }) => theme.color.grey || 'grey'};
+    svg {
+        width: 70%;
+        & > * {
+            fill: ${({ theme }) => theme.color.grey || 'grey'};
+        }
     }
     &.active {
         background: ${({ theme }) => theme.color.blue || 'lightblue'};

@@ -4,7 +4,9 @@ export const theme = {
         blue: '#5541D7',
         grey: '#8bc270',
         lightgrey: '#F7F7FC',
-        white: '#FFFFFF'
+        white: '#FFFFFF',
+        rateIndicatorDown: '#f9416c',
+        rateIndicatorUp: '#52e0c6'
     },
     font: {
         header: "Mulish-Bold",
@@ -42,7 +44,7 @@ export const theme = {
         SideBarIcons: [
             {
                 name: 'products',
-                src: `<svg height="24" width="24">
+                src: `<svg height="24" width="24" viewBox="0 0 24 24">
                 <polyline points="4,4 10,4 10,10 4,10 4,4" style="stroke-width:1" />
                 <polyline points="14,4 20,4 20,10 14,10 14,4" style="stroke-width:1" />
                 
@@ -99,5 +101,13 @@ export const theme = {
                 isSvg: true
             },
         ],
+        statsSummary: {
+            name: 'rate',
+            src: `<svg height="24" width="24">
+                <polyline points="12,0 12,24 0,12 12,24 24,12"/>
+                Sorry, your browser does not support inline SVG.
+            </svg>`,
+            isSvg: true
+        }
     }
 }
