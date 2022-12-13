@@ -29,7 +29,7 @@ export const ContentSection = styled.section.attrs({ className: 'ContentSection'
 export const AppContainer = styled.div.attrs({ className: 'AppContainer' }) `
   display: grid;
   height: 100vh;
-  grid-template-columns: minmax(50px,100px) minmax(300px, auto);
+  grid-template-columns: minmax(50px,7fr) minmax(300px, 93fr);
   grid-template-rows: minmax(60px,80px) auto;
   grid-template-areas: 'header header' 
                         'sidebar content'; 
