@@ -1,14 +1,17 @@
 
 import React from 'react'
-import { ItemsSoldWrap, ItemsSoldImg, OrderSummaryCont, OrderSummary, LatestOrderCont, LatestOrderSection, ItemsSoldSection } from './StatsSummary.styled'
+import { RateText, ItemsSoldWrap, ItemsSoldImg, OrderSummaryCont, OrderSummary, LatestOrderCont, LatestOrderSection, ItemsSoldSection,StatsRateIcon } from './StatsSummary.styled'
 import ordersData from './orders.json'
 import itemsSoldData from './itemsSold.json'
+import statsSummaryData from './statsSummary.json'
+import { renderIcon } from '../../utils/renderIcon'
+import { theme } from '../../themes/defaultTheme'
 export default function Orders() {
 
   function renderItemsSold(itemsSold) {
     return (<ItemsSoldSection>
         <h3>Items Sold</h3>
-        <ItemsSoldWrap onScroll={(e)=> console.log(e.target.scrollTop)}>
+        <ItemsSoldWrap>
           <span />
           <table>
             <tbody>
@@ -48,15 +51,16 @@ export default function Orders() {
   return (
     <>
       <OrderSummaryCont>
-        <OrderSummary>
-          <div>Customer</div>
-          <div>arrow</div>
-          <div>1000</div>
-          <div>+10%</div>
-        </OrderSummary>
-        <OrderSummary>Orders</OrderSummary>
-        <OrderSummary>Revenue</OrderSummary>
-        <OrderSummary>Net Profit</OrderSummary>
+        {statsSummaryData.map( ({ name, value, rate }) => {
+          return (
+          <OrderSummary key={name}>
+            <div>{ name }</div>
+            <StatsRateIcon rate={rate}>{renderIcon(theme.image.statsSummary)}</StatsRateIcon>
+            <div>{ value }</div>
+            <RateText rate={ rate }>{ rate }%</RateText>
+          </OrderSummary>
+          )
+        })}
       </OrderSummaryCont>
       <LatestOrderCont>
           {renderLatestOrders(ordersData)}
